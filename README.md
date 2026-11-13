@@ -1,8 +1,8 @@
 # GeekPay
 
-**An AI-native finance platform for businesses that run on crypto.**
+**The finance stack for companies and AI agents.**
 
-Companies pay their team, contractors and suppliers in stablecoins across 35+ chains, send invoices that clients pay by link with any token, and see everything in one place. An AI financial agent runs these payments, with the team's approval or on its own within a budget account the company funds and can revoke.
+Companies pay their team, contractors and suppliers in stablecoins across 35+ chains, send invoices that clients pay by link with any token, and see everything in one place. The work can be done by the team or handed to an AI financial agent: it prepares every payment for the team's approval. Paying on its own, from a budget account the company funds and can revoke, comes next.
 
 [geekpay.co](https://www.geekpay.co) · [X](https://x.com/Geekpayco) · [LinkedIn](https://www.linkedin.com/company/geekpay) · ostap@geekpay.co
 
@@ -20,7 +20,7 @@ Companies pay their team, contractors and suppliers in stablecoins across 35+ ch
 | **Checks** | Send money without knowing the recipient's address. The recipient claims it by link to any wallet or exchange address. Until it's claimed, the sender can pull it back, and an unclaimed Check returns on its own. |
 | **Private payments, on request** | A company can make a payment confidential, so salaries don't end up public on-chain. It is a per-payment choice, never on by default. |
 | **Reports** | Every payment in one place, with categories and exports. |
-| **AI financial agent** | Works with the team's approval, or on its own from a separate budget account (see below). |
+| **AI financial agent** | Prepares the work for the team's approval, in GeekPay or any AI assistant. Paying on its own from a separate budget account comes next (see below). |
 
 ## How it works
 
@@ -40,7 +40,7 @@ flowchart LR
 - **Settlement: NEAR Intents.** All value movement runs on NEAR Intents, which is in production. It routes stablecoins and other assets across 35+ chains and delivers them on the chain the recipient wants. The recipient never needs a gas token.
 - **Sign-in and wallets.** Privy: email, social sign-in, and EVM and Solana wallets, plus NEAR wallet sign-in. One wallet per account. Payments from a company's wallet are always signed by that wallet.
 - **Fee engine.** One fee function for every payment type; nothing is hard-coded per screen. Wallet-to-wallet sends are free.
-- **AI financial agent.** It works through an MCP server over GeekPay's payment API, so it isn't tied to one model. In autonomous mode it pays only from a budget account the company funds, caps and can revoke; it can never touch the company's main wallet. Rules (per-payment cap, allowed recipients, schedule) are checked before every payment the agent signs.
+- **AI financial agent.** It works through an MCP server over GeekPay's payment API, so it isn't tied to one model. In autonomous mode, which comes next, it pays only from a budget account the company funds, caps and can revoke; it can never touch the company's main wallet. Rules (per-payment cap, allowed recipients, schedule) are checked before every payment the agent signs.
 
 ## Principles
 
