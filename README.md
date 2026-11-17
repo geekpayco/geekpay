@@ -1,6 +1,6 @@
 # GeekPay
 
-**The finance stack for companies and AI agents.**
+**The payments stack for companies and AI agents.**
 
 Companies pay their team, contractors and suppliers in stablecoins across 35+ chains, send invoices that clients pay by link with any token, and see everything in one place. The work can be done by the team or handed to an AI financial agent: it prepares every payment for the team's approval. Paying on its own, from a budget account the company funds and can revoke, comes next.
 
